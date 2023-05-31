@@ -3,7 +3,7 @@ import pickle
 import sys
 
 from flask import request
-# from sentence_preprocess import text_preprocess
+from sentence_preprocess import text_preprocess
 
 app = Flask(__name__)
 
@@ -27,14 +27,12 @@ def predict():
     else:
         sent_type = 'Headline'
 
-    # sent = text_preprocess(sent_type, input_text)
-    prediction = 0
-    # print(prediction)
-    # if model_num==1:
-    #  prediction = model_title.predict(input_text)
-    # else:
-    #  prediction = model_headline.predict(input_text)
-    # if request.method=='POST':
+    sent = text_preprocess(sent_type, input_text)
+   
+    if model_num==1:
+     prediction = model_title.predict(input_text)
+    else:
+     prediction = model_headline.predict(input_text)
      if(prediction>0):
         render_template('home.html',pred="{{Great! It is positive!}}")
      else:
