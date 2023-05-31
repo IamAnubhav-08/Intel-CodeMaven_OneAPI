@@ -1,8 +1,7 @@
 # Intel-CodeMaven_OneAPI
 Sentiment Analysis Prediction WebApp
 
-
-# Intel OneAPI SentimentAnalysis
+This WebApp prototype has been designed to provide the full functionality of our model, deployed on the world wide web. We know that there are certain limitations to this software but we are working on it to improve all of its features, to make it user friendly. Finally, this repositiory is ***not*** a fully functioning sentiment analysis predictor, but rather a demo of what our final result would look like.
 
 ## Our Motivation
 
